@@ -1,0 +1,44 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 20px;
+  font-size: 2rem;
+}
+
+#editor {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+#controls {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+#controls label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+#controls input {
+  margin-bottom: 10px;
+}
+
+#canvasContainer {
+  width: 500px;
+  height: 400px;
+  border: 2px solid white;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
