@@ -1,7 +1,7 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #141e30, #243b55);
-  color: white;
+  background: radial-gradient(circle at top, #1e293b, #020617 70%);
+  color: #f8fafc;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -10,35 +10,74 @@ body {
 h1 {
   margin: 20px;
   font-size: 2rem;
+  text-shadow: 0 0 16px rgba(125, 211, 252, 0.55);
 }
 
 #editor {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
-  padding: 20px;
+  gap: 24px;
+  padding: 12px 20px 24px;
+  flex-wrap: wrap;
 }
 
 #controls {
-  background: rgba(255,255,255,0.1);
-  padding: 20px;
+  width: 280px;
+  background: rgba(15, 23, 42, 0.7);
+  padding: 18px;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 16px 28px rgba(2, 6, 23, 0.45);
+  text-align: left;
 }
 
 #controls label {
   display: block;
-  margin: 10px 0 5px;
+  margin: 10px 0 6px;
+  font-size: 0.95rem;
 }
 
-#controls input {
+#controls input,
+#controls select,
+#controls button {
+  width: 100%;
   margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+}
+
+#controls input,
+#controls select {
+  box-sizing: border-box;
+  padding: 8px;
+  background: rgba(15, 23, 42, 0.85);
+  color: #f8fafc;
+}
+
+#controls button {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 9px;
+  background: linear-gradient(120deg, #3b82f6, #a855f7);
+  color: #fff;
+}
+
+#controls button:hover {
+  filter: brightness(1.08);
+}
+
+.hint {
+  margin-top: 10px;
+  font-size: 0.83rem;
+  color: #cbd5e1;
 }
 
 #canvasContainer {
   width: 500px;
   height: 400px;
-  border: 2px solid white;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  border: 2px solid rgba(148, 163, 184, 0.9);
+  border-radius: 14px;
+  box-shadow: 0 18px 30px rgba(2, 6, 23, 0.6);
+  overflow: hidden;
 }
